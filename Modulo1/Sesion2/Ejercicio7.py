@@ -7,3 +7,23 @@
 # cierta cantidad de docenas del producto
 
 
+Docena=int(input("Cuantas docenas del producto desea llevar : "))
+precio_Docena=12
+OffDocena=0.15
+Offnomarl=0.10
+if Docena==3:
+    subtotal=precio_Docena*Docena 
+    descuento=subtotal*OffDocena
+    total=subtotal-descuento
+    print("Su total de la compra sin descuento: $",subtotal, "dolares,", "Descuento total: ", descuento,"dolares,", "Total a pagar es: $", total , "dolares")
+elif Docena >3:
+    unidades=Docena-3
+    subtotal=precio_Docena*Docena 
+    descuento=subtotal*OffDocena
+    total=subtotal-descuento
+    print("Su total de la compra sin descuento: $",subtotal, "dolares,", "Descuento total: ", descuento,"dolares,", "Total a pagar es:$", total,"dolares,",unidades,"Unidades gratis  por compras mayores a tres Docenas" )
+else:
+    subtotal=precio_Docena*Docena 
+    descuento=subtotal*Offnomarl
+    total=subtotal-descuento
+    print("Su total de la compra sin descuento: $",subtotal, "dolares,", "Descuento total: ", descuento,"dolares,", "Total a pagar es:$", total, "dolares" )
