@@ -21,7 +21,8 @@ elif Docena >3:
     subtotal=precio_Docena*Docena 
     descuento=subtotal*OffDocena
     total=subtotal-descuento
-    print("Su total de la compra sin descuento: $",subtotal, "dolares,", "Descuento total: ", descuento,"dolares,", "Total a pagar es:$", total,"dolares,",unidades,"Unidades gratis  por compras mayores a tres Docenas" )
+    print("Su total de la compra sin descuento: $",subtotal, "dolares,", "Descuento total: ", descuento,"dolares,", "Total a pagar es:$", total,"dolares,"
+        ,unidades,"Unidades gratis  por compras mayores a tres Docenas" )
 else:
     subtotal=precio_Docena*Docena 
     descuento=subtotal*Offnomarl
