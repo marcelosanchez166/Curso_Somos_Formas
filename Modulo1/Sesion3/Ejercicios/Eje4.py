@@ -9,11 +9,14 @@ anio = int(input("Ingrese el año: "))
 dias_a_sumar = int(input("Ingrese la cantidad de días a sumar: "))
 
 for i in range(dias_a_sumar):
-    dia=dia+dias_a_sumar
+    dias=0
     if mes==12 or mes==10 or mes==8 or mes ==7 or mes==5 or mes==3 or mes==1:
-        if dia==31:
+        days=dia+dias_a_sumar
+        print(days)
+        if days>31:
+            dias=days-31
             mes+=1
-        print(dia,mes,anio)
+        print(dias,mes,anio)
     break
     # elif mes==6 or mes==9 or mes==11 or mes ==9 or mes==4:
     #     return "El mes es de 30 dias"
