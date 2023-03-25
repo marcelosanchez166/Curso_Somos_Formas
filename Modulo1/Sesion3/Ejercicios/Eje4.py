@@ -1,32 +1,38 @@
 # 4. programa que solicite una fecha (día, mes, año) y una cantidad de días, elabore algoritmo para
 # sumar días a la fecha capturada
 
-
 # Pedir al usuario la fecha y la cantidad de días a sumar
 dia = int(input("Ingrese el día: "))
 mes = int(input("Ingrese el mes: "))
 anio = int(input("Ingrese el año: "))
 dias_a_sumar = int(input("Ingrese la cantidad de días a sumar: "))
-
 for i in range(dias_a_sumar):
-    dias=0
-    mess=0
     if mes==12 or mes==10 or mes==8 or mes ==7 or mes==5 or mes==3 or mes==1:
         days=dia+dias_a_sumar
-        print(days)
         if days>31:
-            dias=days-31
-            mes+=1
-            if mes==12:
+            mes=mes+1
+            days=days-31
+            if mes>12:
                 anio+=1
-                mess=mes-1
-                print(mess)
-        print(dias,mess,anio)
+                mes=1
+        print(days,mes,anio)
+    elif mes==6 or mes==9 or mes==11 or mes==9 or mes==4:
+        days=dia+dias_a_sumar
+        if days>30:
+            mes=mes+1
+            days=days-30
+            # if mess>12:
+            #     anio+=1
+            #     mess=1
+            # print(mess)
+        print(days,mes,anio)
+    elif mes==2:
+        days=dia+dias_a_sumar
+        if days>28:
+            mes=mes+1
+            days=days-28
+        print(days,mes,anio)
     break
-    # elif mes==6 or mes==9 or mes==11 or mes ==9 or mes==4:
-    #     return "El mes es de 30 dias"
-    # elif mes==2:
-    #     return "El mes es de 28 dias"
     # else:
     #     return "No existe el mes"
     # if dia 
