@@ -20,3 +20,21 @@
 # antiguedad/100)
 # • Zona B: precio = (metros * 1000 + habitaciones * 5000 + garaje * 15000) * (1-
 # antiguedad/100) * 1.5
+
+[{'año': 2000, 'metros': 100, 'habitaciones': 3, 'garaje': True, 'zona':
+'A'},
+{'año': 2012, 'metros': 60, 'habitaciones': 2, 'garaje': True, 'zona':
+'B'},
+{'año': 1980, 'metros': 120, 'habitaciones': 4, 'garaje': False, 'zona':
+'A'},
+{'año': 2005, 'metros': 75, 'habitaciones': 3, 'garaje': True, 'zona':
+'B'},
+{'año': 2015, 'metros': 90, 'habitaciones': 2, 'garaje': False, 'zona':
+'A'}]
+def buscar_inmuebles(lista_inmuebles,Presupuesto):
+    Zona_A= (metros * 1000 + habitaciones * 5000 + garaje * 15000) * (1-antiguedad/100)
+
+    pass
+
+
+Presupuesto=float(input("Cuanto es su presupuesto para comprar el inmueble"))
